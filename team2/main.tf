@@ -72,3 +72,8 @@ resource "aws_instance" "web_server" {                            # BLOCK
     App   = local.application
   }
 }
+
+resource "aws_instance" "aws_linux" {
+  instance_type = "t2.micro"
+  ami           = "ami-04cb4ca688797756f"
+}
