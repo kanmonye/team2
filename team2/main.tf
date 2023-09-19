@@ -77,3 +77,11 @@ resource "aws_instance" "aws_linux" {
   instance_type = "t2.micro"
   ami           = "ami-04cb4ca688797756f"
 }
+
+use_lt = true
+
+create_lt = true
+
+tags_as_map = {
+    Name = "Web EC2 Server 2"
+  }
